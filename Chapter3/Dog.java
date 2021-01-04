@@ -2,39 +2,26 @@
 class Dog {
     //Dog hava a instance variable name
     String name;
+
+    //增加一个size实例变量，bark使用其来决定使用哪一种声音
+	int size;
+
     //Dog's method
-    public static void main(String []args) {
-	//create a Dog object
-	Dog dog1 = new Dog();
-	dog1.bark();
-	dog1.name = "Bart";
-
-	//create Dog array
-	Dog[] myDogs = new Dog[3];
-
-	myDogs[0] = new Dog();
-	myDogs[1] = new Dog();
-	myDogs[2] = dog1;
-
-	//access Dog
-	myDogs[0].name = "Fred";
-	myDogs[1].name = "Marge";
-
-	//myDogs[2]'s name is?
-	System.out.println("last Dog's name is ");
-	System.out.println(myDogs[2].name);
-
-	//all dogs to bark()
-	int x = 0;
-	while(x < myDogs.length) {
-	    myDogs[x].bark();
-	    x = x + 1;
-	}
-    }
 
     //create the bark method of Dog
     public void bark() {
-	 System.out.println(name + " says Ruff!");
+    	if (size > 60) {
+			System.out.println("Wooof! Wooof!");
+		} else if (size > 14) {
+    		System.out.println(("Ruff! Ruff!"));
+		} else {
+    		System.out.println("Yip! Yip!");
+		}
+
     }
+
+    public int theSecret(int secret) {
+    	return secret;
+	}
 
 }

@@ -3,13 +3,13 @@ public class Loopy {
         int x = 1;
 	System.out.println("Before the loopy.");
 	while (x < 4) {
-	    System.out.println("In the loopy");
-	    System.out.println("Value of x is " + x);
-	    x = x + 1;
+        System.out.println("In the loopy");
+        System.out.println("Value of x is " + x);
+        x = x + 1;
 
     }
     System.out.println("This is after the loop");
 
 
-    }
+}
 }
