@@ -13,7 +13,7 @@ public class GoodDogTestDrive {
         System.out.println("Dog two: " + two.getSize());
         one.bark();
         two.bark();
-        //声明一鞥装载7个Dog引用的Dog数组
+        //声明装载7个Dog引用的Dog数组
         GoodDog[] pets;
         pets = new GoodDog[7];
 
