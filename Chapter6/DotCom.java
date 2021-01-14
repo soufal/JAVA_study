@@ -6,17 +6,22 @@ import java.util.ArrayList;
  * @Classname DotCom
  * @Date 2021/1/11 21:58
  * @Created by soufal
- * @Description TODO
+ * @Description DotCom游戏完整版
  */
 public class DotCom {
 
     //Dot位置数组
     private ArrayList<String> locationCells;
-
+    //Dot的名字
+    private String name;
     //记录hit次数,并初始化为0
 //    int hitnums = 0;
 
 
+    public void setName(String name) {
+        //设置Dot的名字
+        this.name = name;
+    }
 
     public void setLocationCells(ArrayList<String> locationList) {
 
@@ -39,7 +44,7 @@ public class DotCom {
             if (locationCells.isEmpty()) {
                 //击沉
                 result = "kill";
-
+                System.out.println("很棒！你击沉了" + name + ":(");
             } else {
                 result = "hit";
             }
