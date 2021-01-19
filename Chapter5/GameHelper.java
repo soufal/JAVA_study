@@ -43,6 +43,13 @@ public class GameHelper {
     }
 
     public ArrayList<String> placeDotCom(int comSize) {
+        /*/**
+         * @Description: 给dotcom设置位置。
+         * @Date: 2021/1/18 20:28
+         * @param:[comSize] dotcom个数。
+         * @return:java.util.ArrayList<java.lang.String>
+         * @Author:soufal
+         */
         ArrayList<String> alphaCells = new ArrayList<String>();
         String [] alphacoords = new String [comSize];
         String temp = null;
